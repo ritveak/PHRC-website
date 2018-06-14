@@ -60,6 +60,20 @@ footer td{
 .w3-container p{
   text-align:justify;
 }
+.contact-stripe {
+  display: block;
+    position: fixed;
+    width: 6%;
+    bottom: 0;
+    text-align: center;
+    z-index: 999;
+    padding: 10px;
+  background-color: #1E2832;
+    }
+    .contact-stripe a:hover{
+      color:#fff;
+
+    }
 	</style>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -69,6 +83,7 @@ footer td{
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 
@@ -486,7 +501,21 @@ Chief cardio Thoracic vascular surgery<br>
   
 </footer>
   
+
+
+
+
 <!-- End page content -->
+</div>
+<div class="contact-stripe" style="">
+  <div class="row" style="margin:0px;">
+   <div class="col-xs-6 col-md-12">
+    <a href="tel:9720660777work/" role="button" class="box"><i class="fa fa-phone fa-2x"></i></a>
+   </div>
+   <div class="col-xs-6 col-md-12">
+    <a href="mailto:phrcamro@gmail.com" role="button" class="box"><i class="fa fa-envelope fa-2x" ></i></a>
+   </div>
+  </div>
 </div>
 
 <script type="text/javascript">
@@ -510,6 +539,17 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 } 
+
+ $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
 </script>
 </body>
 </html>
