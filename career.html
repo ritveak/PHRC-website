@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CAREERS: PHRC</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel:900" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+
+<style type="text/css">
+	.container img{
+		width: 100%;
+	}
+ body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+     /* Style the navbar */
+     p{
+      font-family: 'Nunito',sans-serif;
+      font-weight:  500;
+      font-variant: normal; 
+     }
+#navbar {
+  margin-top:0px; 
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 9999;
+  display: none;
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+#homebanner{
+    padding-top: 120px;
+  background: url("images/services.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #f4511e;
+  height:700px;
+  }
+  #ser{
+  background-color:rgb(196, 66, 81); border-radius: 30px; color: white;width: 40%; margin-top: 140px; margin-left: 80px;box-shadow: 12px 10px #96343f; padding: 20px;padding-top: 8px; font-family:montserrat ;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 80px;
+} 
+footer td{
+	padding-left: 100px;
+}
+#navic{
+    display: none;
+    margin-top:10px;
+  }
+  #navhi{
+    display: none;
+  }
+  #navhi a{
+    width: 100%;
+  }
+   @media only screen and (max-width: 600px) {
+    #navic {
+        display: block;
+        float : right;
+    }
+    #navli{
+      display: none;
+    }
+    #ser{
+  width: 80%;
+  margin: auto;
+}
+}
+.container{padding-top:2%;}
+.firstrow{padding:50px 110px 60px 50px;font-size:20px;}
+input[type="text"], input[type="email"]
+{
+  height:80px;
+  outline:none;
+  border:1px solid lightgrey;
+  border-radius:5px;
+}
+textarea{border-radius:5px;outline:none;border:2px solid lightgrey;}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus
+{
+  transition:2s;
+  border:2px solid red;
+}
+::placeholder {
+    color: lightgrey;
+    opacity: 0.7;
+}
+button{margin-bottom:30px;margin-top:30px;width:200px;height:45px;background-color:#5cb85c;outline:none;border:none;border-radius:7px;font-weight:bold;color:white;
+font-size:17px;
+}
+
+button:active{opacity:0.7;}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 18px 12px;
+    cursor: pointer;
+  font-size:20px;
+  color:lightgrey;
+  width: 60%;
+  max-width: 300px;
+}
+</style>
+</head>
+<body>
+
+		<!-- <div class="" style="background-color: white;height: 120px;opacity: 0.9; box-shadow: 0px 5px 5px grey;">
+	
+	<span style="margin-left: 10px;padding: 5px;width: 10%"><img style="float: left;" src="logo.png" alt="Logo"></span><CENTER><h1 style="font-family: 'Cinzel', serif; color: #6aa6ff;">WELCOME TO PANACEA HOSPITAL RESEARCH CENTER </h1></CENTER>
+</div>
+	<div >
+    <img style="width: 100%;height: 700px;" src="images/banner.jpg">
+   </div> -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="index.html" style="float: left;"><img src="images/logo.png" alt="logo"></a><!-- <a href="index.html" style="float:left;"><span style="margin-left: 450px;border-radius: 5px; padding: 5px; font-family: 'Fredoka One', cursive; background-color: #444">  </span></a> -->
+  <span id="navli">
+  <a href="career.html">Career</a>
+  <a href="#contact">Contact</a>
+  <a href="services.html">Services</a>
+  <a href="department.html">Departments</a>
+  <a href="index.html">About</a> 
+  </span>
+  <button id="navic" style="background-color:#333; margin-right: 8px;width: 20%; border:5px solid #333;"><i class="fa fa-bars" style="color: white;"> </i> </button>
+  <span id="navhi">
+  <a href="index.html">About</a>
+   <a href="department.html">Departments</a>
+   <a href="services.html">Services</a>
+   <a href="#contact">Contact</a>
+   <a href="career.html">Career</a>
+  </span>
+</nav>
+
+<div class="jumbotron" id="homebanner">
+  <div id="ser" style="" data-aos="zoom-in-up"><h2>Career at Panacea Hospital Research Center</h2> 
+  </div>
+
+</div>
+
+
+<div class="w3-animate-left w3-container w3-padding-64" id="contact" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" style="text-align: left;margin-left:20px;width: 90%;  ">
+   
+    <!-- <p class=" w3-large" style="font-size: 15px;"><b> India </b></p>
+    <p style="font-size: 15px;">You can also contact us by phone on 9035605703 or email us at abc@gmail.com, or you can send us a message here:</p> -->
+    <form action="mail2.php" method="post" enctype="multipart/form-data">
+  <div class="container">
+    <div class="row text-center" style="">
+      <div class="col-lg-offset-3 col-lg-7" style="box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);">
+      <br><h2>Fill up the details :</h2>
+<p>Enter the details and attach your CV to apply. </p><br>
+        <div class="row firstrow">
+          <div class="col-lg-5 col-sm-12">
+            <input type="text" class="text-center" placeholder="Name" name="nm" required style="width: 90%; max-width: 300px; min-width: 100px;margin: 0;" /><br><br>
+          </div>
+          <div class="col-lg-offset-2 col-lg-5 box col-sm-12">
+            <input type="email" class="text-center" Placeholder="Email" name="mail" required style="width: 90%; max-width: 300px; min-width: 100px;" />
+          </div>
+        </div>
+        
+        <label for="file-upload" class="custom-file-upload">
+          <i class="fa fa-cloud-upload"></i> Upload Your File Here
+        </label>
+        
+        
+        <input id="file-upload" type="file" name="file" required />
+        <br><br><br>
+        <div class="row">
+          <textarea placeholder="Enter Your Message" rows="3" cols="60" name="message" style="width: 70%; max-width: 500px;"></textarea>
+        </div>
+        
+
+    <div style="text-align:center;">
+        
+        <div style="display:block;margin-bottom:20px;margin-top:20px;">
+          
+        </div>
+           
+        <input type="hidden" name="flag" value="1"/>
+        
+
+    </div>
+        <div class="submit">
+          <button type="submit" class="" name="submit" style="width: 30%; min-width: 150px;">Send Mail</button>
+          <br>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</form>
+  </div>
+
+<footer id="contact">
+  <section class="w3-animate-left"  id="footer2-3g">
+
+    
+
+    
+
+    <div class="w3-container w3-round " style="padding: 30px;margin:0px;background-color: #333;color: white;">
+        <div class="media-container-row content mbr-white">
+            <div class="col-sm-12 col-md-3 mbr-fonts-style display-7">
+                <p class="mbr-text" style="font-size: 15px;"><br>
+                    <strong><u>Address</u></strong>
+                    <br>A-109, Lajpat Nagar, 
+                    <br>Opp. Katghar Kotwali, Rampur Road, 
+                    <br>Adarsh Nagar, Lajpat Nagar, 
+                    <br>Moradabad, Uttar Pradesh 244001
+                    <br>
+                    <br>
+</div>
+                    <div class="col-sm-12 col-md-3">
+                    <br><strong><u>Contacts</u></strong>
+                    <br>
+                    <br>Email: phrcamro@gmail.com
+                    <br>Phone: 9720660777
+                    <br>
+                    <br><br>
+                    </div>
+
+                </p>
+            
+            <div class="col-md-2 col-sm-12 mbr-fonts-style display-7">
+                <p class="mbr-text" style="font-size: 15px;">
+                    <strong><u>Social Media Links :</u></strong>
+                    <br>
+                    <br><br>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color:#4267b2"></i></a> 
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px;color:#fb3958"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#1DA1F2"></i></a>
+                   <!--  <a href="linkedin.com"><img src="https://www.kwangwellness.com/wp-content/uploads/2016/08/linkedin.png" style="width:25%;"></a> -->
+                </p><br><br>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.5498366100146!2d78.77785431464929!3d28.822485982343235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbbaeb0bb88d%3A0xb32737cfa8553cc4!2sAshirwad+Multispecipeciality+Hospital+%26+Advance+Laproscopic+Surgery+Centre+(Best+Hospital)!5e0!3m2!1sen!2sin!4v1527858211730" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+            </div><br><br>
+            <div class="col-md-8 col-sm-12">
+              <p>Copyright &copy; 2018 All Right Are Reserved By Panacea Hospital Research Center Pvt. Ltd.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <p class="tag">Created And Design by <a href="jbtech.co.in" style="color:#34c6d3;">J&B Technologies Solutions</a></p>
+            </div>
+
+        </div>
+       </div>
+       
+    </section>
+
+  
+</footer>
+<script type="text/javascript">
+   var c =0;
+  $(window).scroll(function () {
+if ($(window).scrollTop() <= 50) {
+$('.navbar').css('display','block');
+}
+else if ($(window).scrollTop()>=200){
+  $('.navbar').css('background-color','#333');
+
+} 
+else {
+$('.navbar').css('background','transparent');
+}
+});
+  $(window).scroll(function () {
+if ($(window).scrollTop() >= 50) {
+$('#navic').css('background','#333');
+$('#lol').css('color','white');
+$('#navic').css('border-color','#333');
+} else {
+$('#navic').css('background','transparent');
+$('#navic').css('border-color','transparent');
+$('#lol').css('color','black');
+}
+});
+  $(document).ready(function(){
+    $("#navic").click(function(){
+        $("#navhi").toggle();
+        if(c==0){
+          c=1;
+        }
+        else{
+          c=0;
+        }
+    });
+});
+  $(window).scroll(function(){
+    if(c==1){
+      $("#navhi").toggle();
+      c=0;
+    }
+  });
+	 AOS.init({
+  duration: 600,
+});
+
+	 	// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+</body>
+</html>

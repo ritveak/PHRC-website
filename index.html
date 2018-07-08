@@ -2,17 +2,42 @@
 <html>
 <head>
 	<title>TEST</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+
 	<style type="text/css">
-	body{
-		font-family: 'Glyphter'
+	
+
+
+
+  body{
+		font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
 	}
 		 /* Style the navbar */
+     p{
+      font-family: 'Nunito',sans-serif;
+      font-weight:  500;
+      font-variant: normal; 
+     }
 
 #navbar {
 	margin-top:0px; 
   overflow: hidden;
-  background-color: #333;
+  background-color: transparent;
   z-index: 9999;
+  display: none;
 }
 
 /* Navbar links */
@@ -51,7 +76,8 @@ footer td{
 }
 .w3-container h2{
   color: #224d91; 
-  border-left: 8px solid blue;
+  border-left: 8px solid ;
+  border-left-color: rgb(196, 66, 81);
   background-color: #e2e0e2;
   width: 80%;
   text-align:center;
@@ -68,24 +94,62 @@ footer td{
     text-align: center;
     z-index: 999;
     padding: 10px;
-  background-color: #1E2832;
+  background-color: rgba(0,0,0,0);
     }
     .contact-stripe a:hover{
       color:#fff;
 
     }
+    .counter{
+      border-radius: 500px;
+      margin: auto;
+
+      padding: 40px;
+    }
+    #cntr span{
+      padding:30px;
+    }
+ #stats span
+  {
+    margin: auto;
+    list-style-type: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #navic{
+    display: none;
+    margin-top:10px;
+  }
+  #navhi{
+    display: none;
+  }
+  #navhi a{
+    width: 100%;
+  }
+  #homebanner{
+    padding-top: 120px;
+  background: url("images/services.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #f4511e;
+  height:700px;
+  }
+  #ser{
+  background-color:rgb(196, 66, 81); border-radius: 30px; color: white;width: 48%; margin-top: 140px; margin-left: 60px;box-shadow: 12px 10px #96343f; padding: 20px;padding-top: 8px; font-family:montserrat ;
+}
+  @media only screen and (max-width: 600px) {
+    #navic {
+        display: block;
+        float : right;
+    }
+    #navli{
+      display: none;
+    }
+
+}
 	</style>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 
 <script>
 $(document).ready(function(){
@@ -115,56 +179,83 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-	<div style="
-
-
-
-
-/*background: rgba(226,226,226,1);
-background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(204,204,204,1) 42%, rgba(196,194,196,1) 51%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(42%, rgba(204,204,204,1)), color-stop(51%, rgba(196,194,196,1)), color-stop(64%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
-background: -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(204,204,204,1) 42%, rgba(196,194,196,1) 51%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(204,204,204,1) 42%, rgba(196,194,196,1) 51%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(204,204,204,1) 42%, rgba(196,194,196,1) 51%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
-background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(204,204,204,1) 42%, rgba(196,194,196,1) 51%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );*/
-
-
-background: rgba(226,226,226,1);
-background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(176,176,176,1) 10%, rgba(196,196,196,1) 18%, rgba(219,219,219,1) 27%, rgba(224,224,224,1) 35%, rgba(201,199,201,1) 42%, rgba(237,237,237,1) 49%, rgba(227,224,227,1) 54%, rgba(194,194,194,1) 61%, rgba(219,219,219,1) 71%, rgba(189,189,189,1) 82%, rgba(219,215,219,1) 92%, rgba(254,254,254,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(10%, rgba(176,176,176,1)), color-stop(18%, rgba(196,196,196,1)), color-stop(27%, rgba(219,219,219,1)), color-stop(35%, rgba(224,224,224,1)), color-stop(42%, rgba(201,199,201,1)), color-stop(49%, rgba(237,237,237,1)), color-stop(54%, rgba(227,224,227,1)), color-stop(61%, rgba(194,194,194,1)), color-stop(71%, rgba(219,219,219,1)), color-stop(82%, rgba(189,189,189,1)), color-stop(92%, rgba(219,215,219,1)), color-stop(100%, rgba(254,254,254,1)));
-background: -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(176,176,176,1) 10%, rgba(196,196,196,1) 18%, rgba(219,219,219,1) 27%, rgba(224,224,224,1) 35%, rgba(201,199,201,1) 42%, rgba(237,237,237,1) 49%, rgba(227,224,227,1) 54%, rgba(194,194,194,1) 61%, rgba(219,219,219,1) 71%, rgba(189,189,189,1) 82%, rgba(219,215,219,1) 92%, rgba(254,254,254,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(176,176,176,1) 10%, rgba(196,196,196,1) 18%, rgba(219,219,219,1) 27%, rgba(224,224,224,1) 35%, rgba(201,199,201,1) 42%, rgba(237,237,237,1) 49%, rgba(227,224,227,1) 54%, rgba(194,194,194,1) 61%, rgba(219,219,219,1) 71%, rgba(189,189,189,1) 82%, rgba(219,215,219,1) 92%, rgba(254,254,254,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(176,176,176,1) 10%, rgba(196,196,196,1) 18%, rgba(219,219,219,1) 27%, rgba(224,224,224,1) 35%, rgba(201,199,201,1) 42%, rgba(237,237,237,1) 49%, rgba(227,224,227,1) 54%, rgba(194,194,194,1) 61%, rgba(219,219,219,1) 71%, rgba(189,189,189,1) 82%, rgba(219,215,219,1) 92%, rgba(254,254,254,1) 100%);
-background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(176,176,176,1) 10%, rgba(196,196,196,1) 18%, rgba(219,219,219,1) 27%, rgba(224,224,224,1) 35%, rgba(201,199,201,1) 42%, rgba(237,237,237,1) 49%, rgba(227,224,227,1) 54%, rgba(194,194,194,1) 61%, rgba(219,219,219,1) 71%, rgba(189,189,189,1) 82%, rgba(219,215,219,1) 92%, rgba(254,254,254,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
-
-
-
- height: 120px;opacity: 0.9; box-shadow: 0px 5px 5px grey;">
+<!-- 	<div style="background-color:white;height: 120px;opacity: 0.9; box-shadow: 0px 5px 5px grey;">
 	
-	<span style="margin-left: 10px;padding: 5px;width: 10%"><img style="float: left;" src="logo.png" alt="Logo"></span><CENTER><h1 style="font-family: 'Fredoka One', cursive; color: #880e4f;">WELCOME TO PANACEA HOSPITAL RESEARCH CENTER </h1></CENTER>
-</div>
-	<div >
+	<span style="margin-left: 10px;padding: 5px;width: 10%"><img style="float: left;" src="logo.png" alt="Logo"></span><CENTER><h1 style="font-family: 'Cinzel', serif; color: #6aa6ff;">WELCOME TO PANACEA HOSPITAL RESEARCH CENTER </h1></CENTER>
+</div> -->
+	<!-- <div >
     <img style="width: 100%;height: 700px; margin-top: 0px;" src="images/banner.jpg">
-   </div>
+   </div> -->
 	
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
     <a href="index.html" style="float: left;"><img src="images/logo.png" alt="logo"></a><!-- <a href="index.html" style="float:left;"><span style="margin-left: 450px;border-radius: 5px; padding: 5px; font-family: 'Fredoka One', cursive; background-color: #444">  </span></a> -->
+  <span id="navli">
+  <a href="career.html">Career</a>
   <a href="#contact">Contact</a>
   <a href="services.html">Services</a>
   <a href="department.html">Departments</a>
   <a href="#about">About</a> 
+  </span>
+  <button id="navic" style="background-color:#333; margin-right: 8px; border:5px solid #333;"><i class="fa fa-bars  " id="lol" style="color: white;"> </i> </button>
+  <span id="navhi">
+   <a href="#about">About</a>
+   <a href="department.html">Departments</a>
+   <a href="services.html">Services</a>
+   <a href="#contact">Contact</a>
+   <a href="career.html">Career</a>
+
+  
+  
+   
+ 
+  </span>
 </nav>
+
+<!-- <div class="jumbotron" id="homebanner">
+  <div id="ser" style="" data-aos="zoom-in-up"><h2>Welcome to Panacea Hospital Research Center</h2> 
+  </div>
+
+</div> -->
+
+<div >
+  <img src="images/home.gif" style="width: 100%; min-width: 500px;">
+</div>
+
+
+
+
+<!-- counter data -->
+<!-- <div id="cntr">
+  
+
+    <span class="counter">
+      80</span>
+   
+      PATIENTS BED
+   
+      QUALIFIED STAFF  
+   <span class="counter">
+      100</span>
+   <span class="counter">
+      1173</span>
+   
+      SATISFIED PATIENTS
+    
+      EXPERIENCED DOCTORS
+    <span class="counter">
+      17</span>
+    
+
+</div> -->
+
+
 
 
 <div>
 
-
-
 <div id="about" class="w3-row w3-padding-64 w3-animate-left">
   <div class="w3-col w3-container m6 l7 w3-padding-large">
-    <br><br><br>
+    <br>
     <h2  style="" class="w3-center"> About Us </h2><br>
     <p>Dr Girish Bansal's dream materialized with the existence of Little Scholars' Academy society when he thought Education & Medical, Even stronger pillars of strong pillar of human's healthy progress. All the members of the society have been striving for social causes uplifting marginalized people and catering education and health for the long time.<br>
 Serving a golden age in Education, It was decided to serve humanity in Medical, All this multitude accumulated & took the form of 'PANACEA HOSPITAL'.<br> </p>
@@ -179,16 +270,17 @@ Serving a golden age in Education, It was decided to serve humanity in Medical, 
 
 <br><br>
 <div class="w3-row w3-padding-64 w3-animate-left">
-  <div class="w3-col w3-container m6 l5 w3-padding-large ">
-    <img src="images/mission.jpg" alt="Our mission">
-  </div>
+  
   <div class="w3-col w3-container m6 l7 w3-padding-large">  
     <h2 id="mvo" class="w3-center">Mission, Vision and Objective</h2> 
-    <p> Nothing has emerged more rapidly than commercialization in all fields even that so meanly that human health is so marginalized, causing national health crippled & unaccessable to masses, In such scenario service that of International class is out of question.<br>
+    <p> <br>Nothing has emerged more rapidly than commercialization in all fields even that so meanly that human health is so marginalized, causing national health crippled & unaccessable to masses, In such scenario service that of International class is out of question.<br>
 PANACEA HOSPITAL is an International class health care with cozy, glossy & hyper hygienic environment. It aims to provide medical facilities, accessible to masses in a courteous & proper communicado.<br><br>
 
 Its richness lies in its grandeur of being of very high standard yet providing splendid medical facilities with state-of-the-art equipments in quite affordable prices so that the medical facilities of PANACEA must reach to the people of all financial status & Hospital could do its Endeavour in making national health happy & proud.<br>
 </p>
+  </div>
+  <div class="w3-col w3-container m6 l5 w3-padding-large ">
+    <img src="images/mission.jpg" alt="Our mission">
   </div>
 </div>
 <br><br>
@@ -204,7 +296,7 @@ Its richness lies in its grandeur of being of very high standard yet providing s
   </div>
 </div>
 
-<
+
 
 
 <!-- <h2 id="departments">Departmens</h2>
@@ -335,15 +427,35 @@ The rooms have been architected in a way that female patients feel comfortable, 
 </tr>
 </table>
 </div> -->
+<hr>
 
+<div id="stats" class="w3-row w3-container" style=" margin: auto;padding-bottom: 150px; padding-top: 150px;">
+  <h2 style="max-width: 600px;"> Our Stats</h2>
+  <br><br>
+
+                <span class="w3-col m3 l3  ">
+            <h3 class="counter">80</h3>
+            <p>  PATIENTS BED</p>
+        </span><span class="w3-col m3 l3  ">
+            <h3 class="counter">100</h3>
+            <p>QUALIFIED STAFF</p>
+        </span><span class="w3-col m3 l3  ">
+            <h3 class="counter">1173</h3>
+            <p>SATISFIED PATIENTS</p>
+        </span>
+        <span class="w3-col m3 l3  ">
+            <h3 class="counter">17</h3>
+            <p>EXPERIENCED DOCTORS</p>
+        </span>
+    </div>
+
+<hr>
 <div id="docs" class="w3-row w3-padding-64 w3-animate-left">
-  <div class="w3-col w3-container  w3-padding-large">
-    <br><br><br>
-    <h2  style="width: 50%" class="w3-center"> Our Doctors</h2><br>
-    <table>
-      <tr>
-<td> 
+  <br><br><br>
   <div class="w3-container">
+  <h2 class="w3-center" style="max-width: 600px;"> Our Doctors</h2><br>
+    
+  <div class="w3-container  w3-col l4 m6 s12">
  
 
   <div class="w3-card-4" style="width:90%;margin:20px;height:350px;">
@@ -364,8 +476,7 @@ EXP- Handled team of performed variants complicated Surg.<br>
     </div>
   </div> 
 
-</td>
-        <td><div class="w3-container">
+<div class="w3-container w3-col l4 m6 s12">
  
 
   <div class="w3-card-4" style="width:100%;margin:20px;height:350px;">
@@ -382,10 +493,8 @@ OPD’s<br>
        </p></td></tr></table>
     </div>
     </div>
-</div>  </td>
-        
-
-        <td> <div class="w3-container">
+</div>  
+ <div class="w3-container w3-col l4 m6 s12">
  
 
   <div class="w3-card-4" style="width:90%;margin:20px;height:350px;">
@@ -401,11 +510,8 @@ Fellowship in traumatology & Orthopedic Surgery<br>
       </p></td></tr></table>
     </div>
     </div>
-</div> </td>
-      </tr>
-       <tr>
-<td> 
-  <div class="w3-container">
+</div> 
+  <div class="w3-container w3-col l4 m6 s12">
  
 
   <div class="w3-card-4" style="width:90%;margin:20px;height:350px;">
@@ -421,8 +527,7 @@ Chief cardio Thoracic vascular surgery<br>
     </div>
   </div> 
 
-</td>
-        <td><div class="w3-container">
+<div class="w3-container w3-col l4 m6 s12">
  
 
   <div class="w3-card-4" style="width:100%;margin:20px;height:350px;">
@@ -434,10 +539,10 @@ Chief cardio Thoracic vascular surgery<br>
       <br><br><p>MBBS MS Gynecologist IVF,<br> Pregnancy related cases </p></td></tr></table>
     </div>
     </div>
-</div>  </td>
+</div>
         
 
-        <td> <div class="w3-container">
+       <div class="w3-container w3-col l4 m6 s12">
  
 
   <div class="w3-card-4" style="width:90%;margin:20px;height:350px;">
@@ -449,54 +554,86 @@ Chief cardio Thoracic vascular surgery<br>
       <br><br><p> MBBS DVD (Dermatology) <br>Attended numerous CME’s conducted by VLCC & Dr. Patra</p></td></tr></table>
     </div>
     </div>
-</div> </td>
-      </tr>
-    </table>
-  </div>
+</div> </div>
 </div>
 <br><br>
 
-
+<div class="w3-animate-left w3-container w3-padding-64" id="contact" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" style="text-align: left;margin-left:20px;width: 90%;  ">
+    <h1>Contact</h1><br>
+    <!-- <p class=" w3-large" style="font-size: 15px;"><b> India </b></p>
+    <p style="font-size: 15px;">You can also contact us by phone on 9035605703 or email us at abc@gmail.com, or you can send us a message here:</p> -->
+    <form action="mail.php" method="post" enctype="multipart/form-data">
+      <p style="font-size: 15px;"><input class="w3-input w3-padding-10" type="text" placeholder="Name" required name="nm"></p>
+      <p style="font-size: 15px;"><input class="w3-input w3-padding-10" type="email" placeholder="Email Id" required name="mail"></p>
+      <p style="font-size: 15px;"><input class="w3-input w3-padding-10" type="text" placeholder="Subject" required name="subject"></p>   
+      <p style="font-size: 15px;"><input class="w3-input w3-padding-10" type="text" placeholder="Message" required name="message"></p>
+    <!--   <p style="font-size: 15px;"><input class="w3-input w3-padding-10" id="file-upload" type="file" name="file" required ></p> -->
+      <p style="font-size: 15px;"><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
  
 
-<footer id="contact">   
+<footer>
+  <section class="w3-animate-left"  id="footer2-3g">
 
-   <div id="contact" style="background-color:#1E2832; color: rgba(255, 255, 255, 0.75);">
-                <table >
-                  <tr>
-                  <td style="width: 30%; padding-left: 130px;"><strong><u>Address</u></strong>
-                    <br>
-  
-                    <br> 
-                    <br></td>
-                    <td><br><strong><u>Contacts</u></strong>
-                    <br>
-                    <p>Mobile : +91 </p>
-      <p>E-mail : @gmail.com</p>
-      <a href="https://www.facebook.com/ /"><i class="fa fa-facebook-square" style="font-size:36px;color:#4267b2"></i></a>&nbsp;&nbsp;
-      <a href="https://www.instagram.com//"><i class="fa fa-instagram" style="font-size:36px;color:#fb3958"></i></a>  &nbsp;&nbsp;
-      <a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#1DA1F2"></i></a>
+    
 
-                </td>
-           
-            <!-- <div class="col-9 col-md-2 col-sm-6 mbr-fonts-style display-7">
+    
+
+    <div class="w3-container w3-round " style="padding: 30px;margin:0px;background-color: #333;color: white;">
+        <div class="media-container-row content mbr-white">
+            <div class="col-sm-12 col-md-3 mbr-fonts-style display-7">
+                <p class="mbr-text" style="font-size: 15px;"><br>
+                    <strong><u>Address</u></strong>
+                    <br>A-109, Lajpat Nagar, 
+                    <br>Opp. Katghar Kotwali, Rampur Road, 
+                    <br>Adarsh Nagar, Lajpat Nagar, 
+                    <br>Moradabad, Uttar Pradesh 244001
+                    <br>
+                    <br>
+</div>
+                    <div class="col-sm-12 col-md-3">
+                    <br><strong><u>Contacts</u></strong>
+                    <br>
+                    <br>Email: phrcamro@gmail.com
+                    <br>Phone: 9720660777
+                    <br>
+                    <br><br>
+                    </div>
+
+                </p>
+            
+            <div class="col-md-2 col-sm-12 mbr-fonts-style display-7">
                 <p class="mbr-text" style="font-size: 15px;">
                     <strong><u>Social Media Links :</u></strong>
                     <br>
                     <br><br>
-                    <a href="facebook.com"><img src="https://centredactionbenevolecowansville.files.wordpress.com/2017/09/logo-facebook.png" style="padding:5px;width:30%;"></a> 
-                    <a href="instagram.com"><img src="https://i2.wp.com/www.lkblondon.com/wp-content/uploads/2017/08/instagram-colourful-icon.png" style="padding:5px;width:25%;"></a>
-                    <a href="twitter.com"><img src="http://files.softicons.com/download/social-media-icons/clean-simple-social-icons-by-creative-nerds/png/256x256/Twitter.png" style="padding:5px;width:25%;"></a>
-                   
-                </p>
-            </div> -->
-            <td>
-            <div class="col-12 col-md-6" style="padding-top: 50px; padding-bottom: 50px;">
-                <div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.5498366100146!2d78.77785431464929!3d28.822485982343235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbbaeb0bb88d%3A0xb32737cfa8553cc4!2sAshirwad+Multispecipeciality+Hospital+%26+Advance+Laproscopic+Surgery+Centre+(Best+Hospital)!5e0!3m2!1sen!2sin!4v1527858211730" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color:#4267b2"></i></a> 
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px;color:#fb3958"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#1DA1F2"></i></a>
+                   <!--  <a href="linkedin.com"><img src="https://www.kwangwellness.com/wp-content/uploads/2016/08/linkedin.png" style="width:25%;"></a> -->
+                </p><br><br>
             </div>
-        </td></tr></table></div>
+            <div class="col-sm-12 col-md-4">
+                <div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.5498366100146!2d78.77785431464929!3d28.822485982343235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbbaeb0bb88d%3A0xb32737cfa8553cc4!2sAshirwad+Multispecipeciality+Hospital+%26+Advance+Laproscopic+Surgery+Centre+(Best+Hospital)!5e0!3m2!1sen!2sin!4v1527858211730" width="100%" max-width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
+            </div><br><br>
+            <div class="col-md-8 col-sm-12">
+              <p>Copyright &copy; 2018 All Right Are Reserved By Panacea Hospital Research Center Pvt. Ltd.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <p class="tag">Created And Design by <a href="jbtech.co.in" style="color:#34c6d3;">J&B Technologies Solutions</a></p>
+            </div>
+
+        </div>
+       </div>
+       
+    </section>
 
   
 </footer>
@@ -510,15 +647,62 @@ Chief cardio Thoracic vascular surgery<br>
 <div class="contact-stripe" style="">
   <div class="row" style="margin:0px;">
    <div class="col-xs-6 col-md-12">
-    <a href="tel:9720660777work/" role="button" class="box"><i class="fa fa-phone fa-2x"></i></a>
+    <a href="tel:9720660777" role="button" class="box"><i class="fa fa-phone fa-2x"></i></a>
    </div>
    <div class="col-xs-6 col-md-12">
     <a href="mailto:phrcamro@gmail.com" role="button" class="box"><i class="fa fa-envelope fa-2x" ></i></a>
    </div>
   </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="jquery.countup.js"></script>
+<script>
+$('.counter').countUp();
+</script>
 <script type="text/javascript">
+  var c =0;
+  $(window).scroll(function () {
+if ($(window).scrollTop() <= 50) {
+$('.navbar').css('display','block');
+}
+else if ($(window).scrollTop()>=200){
+  $('.navbar').css('background-color','#333');
+
+} 
+else {
+$('.navbar').css('background','transparent');
+}
+});
+  $(window).scroll(function () {
+if ($(window).scrollTop() >= 50) {
+$('#navic').css('background','#333');
+$('#lol').css('color','white');
+$('#navic').css('border-color','#333');
+} else {
+$('#navic').css('background','transparent');
+$('#navic').css('border-color','transparent');
+$('#lol').css('color','black');
+}
+});
+  $(document).ready(function(){
+    $("#navic").click(function(){
+        $("#navhi").toggle();
+        if(c==0){
+          c=1;
+        }
+        else{
+          c=0;
+        }
+    });
+});
+  $(window).scroll(function(){
+    if(c==1){
+      $("#navhi").toggle();
+      c=0;
+    }
+  });
+  
    AOS.init({
   duration: 600,
 });
