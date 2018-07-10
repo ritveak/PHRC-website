@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TEST</title>
+	<title>
+  PHRC </title>
+  <link rel="icon" href="images/logo.jpg">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,6 +26,7 @@
 		font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-variant: small-caps;
+    width: 100%;
 	}
 		 /* Style the navbar */
      p{
@@ -38,6 +41,7 @@
   background-color: transparent;
   z-index: 9999;
   display: none;
+  width: 100%;
 }
 
 /* Navbar links */
@@ -127,17 +131,14 @@ footer td{
     width: 100%;
   }
   #homebanner{
-    padding-top: 120px;
-  background: url("images/services.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #f4511e;
-  height:700px;
+    width: 100%; min-width: 500px;
+
   }
   #ser{
   background-color:rgb(196, 66, 81); border-radius: 30px; color: white;width: 48%; margin-top: 140px; margin-left: 60px;box-shadow: 12px 10px #96343f; padding: 20px;padding-top: 8px; font-family:montserrat ;
+}
+#shomebanner{
+  width: 100%; display: none;
 }
   @media only screen and (max-width: 600px) {
     #navic {
@@ -147,7 +148,27 @@ footer td{
     #navli{
       display: none;
     }
+    #homebanner{
+  display: none;
+    }
+    #shomebanner{
+      display: block;
+      width: 100vw;
+    }
+    #navbar{
+      width: 100vw;
+    }
+    body{
+      width: 100vw;
+    }
+    footer{
+      width: 100vw;
+    }
 
+
+}
+footer{
+  width: 100%;
 }
 
 	</style>
@@ -190,7 +211,7 @@ $(document).ready(function(){
    </div> -->
 	
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-    <a href="index.html" style="float: left;width: 5%;"><img src="images/logo.jpg" alt="logo" id="log" style="width: 100%;"></a><!-- <a href="index.html" style="float:left;"><span style="margin-left: 450px;border-radius: 5px; padding: 5px; font-family: 'Fredoka One', cursive; background-color: #444">  </span></a> -->
+    <a href="index.html" style="float: left;"><img src="images/logo.jpg" alt="logo" id="log" style="width: 39px;"></a><!-- <a href="index.html" style="float:left;"><span style="margin-left: 450px;border-radius: 5px; padding: 5px; font-family: 'Fredoka One', cursive; background-color: #444">  </span></a> -->
   <span id="navli">
   <a href="career.html">Career</a>
   <a href="#contact">Contact</a>
@@ -220,7 +241,7 @@ $(document).ready(function(){
 </div> -->
 
 <div >
-  <img src="images/home.gif" style="width: 100%; min-width: 500px;">
+  <img src="images/home.gif" id="homebanner" style="" ><img src="images/shoome.gif" id="shomebanner">
 </div>
 
 
@@ -592,10 +613,10 @@ Chief cardio Thoracic vascular surgery<br>
             <div class="col-sm-12 col-md-3 mbr-fonts-style display-7">
                 <p class="mbr-text" style="font-size: 15px;"><br>
                     <strong><u>Address</u></strong>
-                    <br>A-109, Lajpat Nagar, 
-                    <br>Opp. Katghar Kotwali, Rampur Road, 
-                    <br>Adarsh Nagar, Lajpat Nagar, 
-                    <br>Moradabad, Uttar Pradesh 244001
+                    <br>Panacea hospital and research centre
+                    <br>Next to Little scholars Academy 
+                    <br>Joya-Amroha road 
+                    <br>Amroha -244221
                     <br>
                     <br>
 </div>
@@ -665,27 +686,21 @@ $('.counter').countUp();
 <script type="text/javascript">
   var c =0;
   $(window).scroll(function () {
-if ($(window).scrollTop() <= 50) {
+if ($(window).scrollTop() < 50) {
 $('.navbar').css('display','block');
 }
-else if ($(window).scrollTop()>=200){
+else if ($(window).scrollTop()>=50){
   $('.navbar').css('background-color','#333');
 
 } 
-else {
-$('.navbar').css('background','transparent');
-}
+
 });
   $(window).scroll(function () {
 if ($(window).scrollTop() >= 50) {
 $('#navic').css('background','#333');
 $('#lol').css('color','white');
 $('#navic').css('border-color','#333');
-} else {
-$('#navic').css('background','transparent');
-$('#navic').css('border-color','transparent');
-$('#lol').css('color','black');
-}
+} 
 });
   $(document).ready(function(){
     $("#navic").click(function(){
