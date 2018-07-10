@@ -1,0 +1,133 @@
+.container img{
+		width: 100%;
+	}
+ body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+     /* Style the navbar */
+     p{
+      font-family: 'Nunito',sans-serif;
+      font-weight:  500;
+      font-variant: normal; 
+     }
+#navbar {
+  margin-top:0px; 
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 9999;
+  display: none;
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+#homebanner{
+    padding-top: 120px;
+  background: url("images/services.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #f4511e;
+  height:700px;
+  }
+  #ser{
+  background-color:rgb(196, 66, 81); border-radius: 30px; color: white;width: 40%; margin-top: 140px; margin-left: 80px;box-shadow: 12px 10px #96343f; padding: 20px;padding-top: 8px; font-family:montserrat ;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 80px;
+} 
+footer td{
+	padding-left: 100px;
+}
+#navic{
+    display: none;
+    margin-top:10px;
+  }
+  #navhi{
+    display: none;
+  }
+  #navhi a{
+    width: 100%;
+  }
+   @media only screen and (max-width: 600px) {
+    #navic {
+        display: block;
+        float : right;
+    }
+    #navli{
+      display: none;
+    }
+    #ser{
+  width: 80%;
+  margin: auto;
+}
+ #navbar{
+      width: 100vw;
+    }
+    body{
+      width: 100vw;
+    }
+    footer{
+      width: 100vw;
+    }
+}
+.container{padding-top:2%;}
+.firstrow{padding:50px 110px 60px 50px;font-size:20px;}
+input[type="text"], input[type="email"]
+{
+  height:80px;
+  outline:none;
+  border:1px solid lightgrey;
+  border-radius:5px;
+}
+textarea{border-radius:5px;outline:none;border:2px solid lightgrey;}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus
+{
+  transition:2s;
+  border:2px solid red;
+}
+::placeholder {
+    color: lightgrey;
+    opacity: 0.7;
+}
+button{margin-bottom:30px;margin-top:30px;width:200px;height:45px;background-color:#5cb85c;outline:none;border:none;border-radius:7px;font-weight:bold;color:white;
+font-size:17px;
+}
+
+button:active{opacity:0.7;}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 18px 12px;
+    cursor: pointer;
+  font-size:20px;
+  color:lightgrey;
+  width: 60%;
+  max-width: 300px;
+}

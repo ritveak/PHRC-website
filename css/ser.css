@@ -1,0 +1,112 @@
+.container img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .container{
+    margin-bottom: 200px;
+    margin-top: 100px;
+    text-align: justify;;
+  }
+  .container p{
+    font-family: montserrat;
+    font-size: 20px;
+  }
+  .container .col-md-8{
+    background-color:#ed5364 ;border-radius: 15px;padding: 20px;padding-top: 50px; padding-bottom: 52px;
+  }
+#navbar {
+  margin-top:0px; 
+  overflow: auto;
+ 
+  z-index: 9999;
+  display: none;
+}
+
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 80px;
+} 
+footer td{
+  padding-left: 100px;
+}
+#services{
+  padding-top: 120px;
+  background: url("images/services.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #f4511e;
+  height:700px;
+}
+#navic{
+    display: none;
+    margin-top:10px;
+  }
+  #navhi{
+    display: none;
+  }
+  #navhi a{
+    width: 100%;
+  }
+  img{
+    margin-top: 5px;
+  }
+  #ser{
+  background-color:rgb(196, 66, 81); border-radius: 30px; color: white;width: 40%; margin-top: 140px; margin-left: 80px;box-shadow: 12px 10px #96343f; padding: 20px;padding-top: 8px; font-family:montserrat ;
+}
+  @media only screen and (max-width: 600px) {
+    #navic {
+        display: block;
+        float : right;
+    }
+    #navli{
+      display: none;
+    }
+    #ser{
+  width: 80%;
+  margin: auto;
+}
+ #navbar{
+      width: 100vw;
+    }
+    body{
+      width: 100vw;
+    }
+    footer{
+      width: 100vw;
+    }
+}
+ body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+     /* Style the navbar */
+     p{
+      font-family: 'Nunito',sans-serif;
+      font-weight:  500;
+      font-variant: normal; 
+     }
